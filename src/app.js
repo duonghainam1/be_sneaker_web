@@ -31,4 +31,8 @@ app.use("/api/v1", categoryRouter);
 app.use("/api/v1", attributeRouter);
 app.use("/api/v1", Router_order)
 
-export const viteNodeApp = app;
+// export const viteNodeApp = app;
+
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port ${process.env.PORT}`);
+})
